@@ -12,16 +12,12 @@
         <i class="fas fa-receipt me-2"></i>Record Payment
     </a>
     <div class="btn-group" role="group">
-        <a href="{% url 'invoice-pdf' invoice.pk %}" class="btn pdf-btn" target="_blank">
-            <i class="fas fa-file-pdf me-2"></i>PDF (Classic)
+        
         </a>
         <a href="{% url 'invoice-html-pdf' invoice.pk %}" class="btn btn-info" target="_blank">
-            <i class="fas fa-file-pdf me-2"></i>PDF (Arabic)
+            <i class="fas fa-file-pdf me-2"></i>PDF 
         </a>
     </div>
-    <button onclick="printDocument()" class="btn print-btn">
-        <i class="fas fa-print me-2"></i>Print
-    </button>
     <a href="{% url 'invoice-delete' invoice.pk %}" class="btn btn-danger">
         <i class="fas fa-trash me-2"></i>Delete
     </a>
